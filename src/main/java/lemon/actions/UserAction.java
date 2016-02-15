@@ -3,6 +3,7 @@
  */
 package lemon.actions;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -33,8 +34,16 @@ public class UserAction extends ActionSupport {
 		this.msg = msg;
 	}
 	
+	@Override
+	public String execute() throws Exception {
+		System.out.println("execute...");
+		return this.SUCCESS;
+	}
+	
 	public String login() {
 		System.out.println("login...");
+		ActionContext context = ActionContext.getContext();
+		Object uname = context.getSession().get("username");
 		if (name.equals("lemon") && pwd.equals("abc")) {
 			msg = "µÇÂ¼³É¹¦£¬»¶Ó­Äã£º"+name;
 			return this.SUCCESS;

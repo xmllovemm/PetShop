@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 	<!-- web logo image -->
-	<img align="middle" id="h" alt="网站作者狗" src="img/dog.jpg"><br>
+	<img align="middle" id="h" alt="网站作者" src="img/dog.jpg"><br>
 	
 	请<a href="html/login.html">登录</a>或<a href="">注册</a>
 </body>

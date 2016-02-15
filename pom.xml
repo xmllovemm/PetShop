@@ -16,11 +16,23 @@
       <scope>test</scope>
     </dependency>
     
+    <!-- spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.0.0.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.0.0.RELEASE</version>
+    </dependency>
+    
+    <!-- struct2 -->
      <dependency>
       <groupId>org.apache.struts</groupId>
       <artifactId>struts2-core</artifactId>
       <version>2.3.24</version>
-      <scope>test</scope>
     </dependency>
     
     <!-- hibernate -->
@@ -46,8 +58,15 @@
 		<groupId>javax.servlet</groupId>
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
-		<scope>runtime</scope>
 	</dependency>
+	
+	<!-- mysql jdbc driver -->
+	<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.38</version>
+</dependency>
+	
   </dependencies>
   <build>
     <finalName>PetShop</finalName>

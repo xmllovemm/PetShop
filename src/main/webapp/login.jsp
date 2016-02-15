@@ -8,10 +8,10 @@
 	
 	这里是主页
 	
-	<form action="login" method="post">
+	<form action="login.action" method="post">
 		<p>用户名:<input type="text" name="name"></p>
-		<p>密&nbsp;&nbsp;码:<input type="text" name="pwd"></p>
-		<p><input type="submit" value ="name"></p>
+		<p>密&nbsp;&nbsp;&nbsp;码:<input type="text" name="pwd"></p>
+		<p><input type="submit" value ="登录"></p>
 		
 	</form>
 	
